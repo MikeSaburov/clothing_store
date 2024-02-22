@@ -1,3 +1,12 @@
 export const Header = () => {
-  return <div>Header</div>
+  return (
+    <header className='header'>
+      <div className='container header__container'>
+        <button className='btn-reset header__burger'>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+  )
 }
