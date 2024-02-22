@@ -1,5 +1,5 @@
-import { $lang } from '@/context/lang'
 import { useUnit } from 'effector-react'
+import { $lang } from '@/context/lang'
 import translationsJson from '@/public/translations/translations.json'
 
 export const useLang = () => {
