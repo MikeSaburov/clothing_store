@@ -2,7 +2,7 @@ import './globalStyles/globals.css'
 
 export default function Home() {
   return (
-    <main className='container'>
+    <main>
       <h1>Page</h1>
     </main>
   )
