@@ -1,3 +1,5 @@
+'use client'
+
 import { AllowedLangs } from '@/constants/lang'
 import { createDomain } from 'effector'
 
