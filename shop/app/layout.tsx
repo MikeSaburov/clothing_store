@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
 import './globalStyles/globals.css'
 import { Layout } from '@/components/layouts/Layout'
 
