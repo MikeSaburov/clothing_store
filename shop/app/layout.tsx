@@ -5,7 +5,7 @@ import './globalStyles/globals.css'
 import { Layout } from '@/components/layouts/Layout'
 
 export const metadata: Metadata = {
-  title: 'Store RosTelecom',
+  title: 'Rostelecom',
   description: 'Clothing store',
 }
 
