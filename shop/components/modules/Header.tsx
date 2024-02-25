@@ -15,6 +15,8 @@ export const Header = () => {
         <div className='header__logo'>
           <Logo />
         </div>
+
+        <ul className='header__links'></ul>
       </div>
     </header>
   )
