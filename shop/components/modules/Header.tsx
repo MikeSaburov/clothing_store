@@ -11,6 +11,7 @@ export const Header = () => {
         <button className='btn-reset header__burger'>
           {translations[lang].header.menu_btn}
         </button>
+        <div className='header__logo'></div>
       </div>
     </header>
   )
