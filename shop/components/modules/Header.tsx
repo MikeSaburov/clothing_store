@@ -4,6 +4,7 @@ import { useLang } from '@/hooks/useLang'
 import { Logo } from '../elements/Logo/Logo'
 import Link from 'next/link'
 import '@/app/globalStyles/header.css'
+import { Menu } from './Menu'
 
 export const Header = () => {
   const { lang, translations } = useLang()
@@ -14,6 +15,7 @@ export const Header = () => {
         <button className='btn-reset header__burger'>
           {translations[lang].header.menu_btn}
         </button>
+        <Menu />
         <div className='header__logo'>
           <Logo />
         </div>
