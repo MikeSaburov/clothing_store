@@ -40,7 +40,7 @@ export const Header = () => {
               className='header__links__item__btn header__links__item__btn--cart'
             ></Link>
           </li>
-          <li className='header__links__item'>
+          <li className='header__links__item header__links__item--profile'>
             <Link
               href='/profile'
               className='header__links__item__btn header__links__item__btn--profile'
