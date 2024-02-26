@@ -3,6 +3,7 @@
 import { useLang } from '@/hooks/useLang'
 import { Logo } from '../elements/Logo/Logo'
 import Link from 'next/link'
+import '@/app/globalStyles/header.css'
 
 export const Header = () => {
   const { lang, translations } = useLang()
