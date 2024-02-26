@@ -5,9 +5,14 @@ import { Logo } from '../elements/Logo/Logo'
 import Link from 'next/link'
 import '@/app/globalStyles/header.css'
 import { Menu } from './Menu'
+import { openMenu } from '@/context/modals'
 
 export const Header = () => {
   const { lang, translations } = useLang()
+
+  const handleOpenMenu = () => {
+    openMenu()
+  }
 
   return (
     <header className='header'>
