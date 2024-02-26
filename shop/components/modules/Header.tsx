@@ -19,31 +19,31 @@ export const Header = () => {
         </div>
 
         <ul className='header__links list-reset'>
-          <li className='header__links_item'>
-            <button className='btn-reset header__links_item__btn header__links_item__btn--search'></button>
+          <li className='header__links__item'>
+            <button className='btn-reset header__links__item__btn header__links__item__btn--search'></button>
           </li>
-          <li className='header__links_item'>
+          <li className='header__links__item'>
             <Link
               href='/favorites'
-              className='header__links_item__btn header__links_item__btn--favorites'
+              className='header__links__item__btn header__links__item__btn--favorites'
             ></Link>
           </li>
-          <li className='header__links_item'>
+          <li className='header__links__item'>
             <Link
               href='/comparison'
-              className='header__links_item__btn header__links_item__btn--compare'
+              className='header__links__item__btn header__links__item__btn--compare'
             ></Link>
           </li>
-          <li className='header__links_item'>
+          <li className='header__links__item'>
             <Link
               href='/cart'
-              className='header__links_item__btn header__links_item__btn--cart'
+              className='header__links__item__btn header__links__item__btn--cart'
             ></Link>
           </li>
-          <li className='header__links_item'>
+          <li className='header__links__item'>
             <Link
               href='/profile'
-              className='header__links_item__btn header__links_item__btn--profile'
+              className='header__links__item__btn header__links__item__btn--profile'
             ></Link>
           </li>
         </ul>
