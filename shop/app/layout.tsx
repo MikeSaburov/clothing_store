@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import './globalStyles/normalize.css'
 import './globalStyles/globals.css'
 import { Layout } from '@/components/layouts/Layout'
+import '@/app/globalStyles/header.css'
+import '@/app/globalStyles/menu.css'
 
 export const metadata: Metadata = {
   title: 'Rostelecom',
