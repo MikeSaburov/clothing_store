@@ -51,6 +51,50 @@ export const Menu = () => {
     },
   ]
 
+  const accessoriesLinks = [
+    {
+      id: 1,
+      text: translations[lang].comparison.bags,
+      href: '/catalog/accessories?offset=0&type=bags',
+    },
+    {
+      id: 2,
+      text: translations[lang].comparison.headdress,
+      href: '/catalog/accessories?offset=0&type=headdress',
+    },
+    {
+      id: 3,
+      text: translations[lang].comparison.umbrella,
+      href: '/catalog/accessories?offset=0&type=umbrella',
+    },
+  ]
+
+  const souvenirsLinks = [
+    {
+      id: 1,
+      text: translations[lang].comparison['business-souvenirs'],
+      href: '/catalog/souvenirs?offset=0&type=business-souvenirs',
+    },
+    {
+      id: 2,
+      text: translations[lang].comparison['promotional-souvenirs'],
+      href: '/catalog/souvenirs?offset=0&type=promotional-souvenirs',
+    },
+  ]
+
+  const officeLinks = [
+    {
+      id: 1,
+      text: translations[lang].comparison.notebook,
+      href: '/catalog/office?offset=0&type=notebook',
+    },
+    {
+      id: 2,
+      text: translations[lang].comparison.pen,
+      href: '/catalog/office?offset=0&type=pen',
+    },
+  ]
+
   return (
     <nav className={`nav-menu ${menuIsOpen ? 'open' : 'close'}`}>
       <div className='container nav-menu__container'>
