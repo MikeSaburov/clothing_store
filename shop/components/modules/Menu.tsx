@@ -1,3 +1,5 @@
+import { AllowedLangs } from '@/constants/lang'
+import { setLang } from '@/context/lang'
 import { $menuIsOpen, closeMenu } from '@/context/modals'
 import { useLang } from '@/hooks/useLang'
 import { removeOverflowHiddenFromBody } from '@/lib/utils/common'
@@ -11,6 +13,11 @@ export const Menu = () => {
   const [showContactsList, setShowContactsList] = useState(false)
   const { lang, translations } = useLang()
   const menuIsOpen = useUnit($menuIsOpen)
+
+  const handleSwitchLang = (lang: string) => {
+    setLang(lang as AllowedLangs)
+    localStorage.setItem('lang', JSON.stringify(lang))
+  }
 
   const handleCloseMenu = () => {
     removeOverflowHiddenFromBody()
