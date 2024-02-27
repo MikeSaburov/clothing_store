@@ -19,6 +19,9 @@ export const Menu = () => {
     localStorage.setItem('lang', JSON.stringify(lang))
   }
 
+  const handleSwitchLangToRu = () => handleSwitchLang('ru')
+  const handleSwitchLangToEn = () => handleSwitchLang('en')
+
   const handleCloseMenu = () => {
     removeOverflowHiddenFromBody()
     closeMenu()
@@ -30,6 +33,24 @@ export const Menu = () => {
         className={`btn-reset nav-menu__close ${menuIsOpen ? 'open' : ''}`}
         onClick={handleCloseMenu}
       ></button>
+      <div className={`nav-menu__lang ${menuIsOpen ? 'open' : ''}`}>
+        <button
+          className={`btn-reset nav-menu__lang__btn ${
+            lang === 'ru' ? 'lang-active' : ''
+          }`}
+          onClick={handleSwitchLangToRu}
+        >
+          RU
+        </button>
+        <button
+          className={`btn-reset nav-menu__lang__btn ${
+            lang === 'en' ? 'lang-active' : ''
+          }`}
+          onClick={handleSwitchLangToEn}
+        >
+          EN
+        </button>
+      </div>
       <h1>Menu</h1>
     </nav>
   )
