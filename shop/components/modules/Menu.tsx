@@ -28,6 +28,29 @@ export const Menu = () => {
     closeMenu()
   }
 
+  const clothLinks = [
+    {
+      id: 1,
+      text: translations[lang].comparison['t-shirts'],
+      href: '/catalog/cloth?offset=0&type=t-shirts',
+    },
+    {
+      id: 2,
+      text: translations[lang].comparison['long-sleeves'],
+      href: '/catalog/cloth?offset=0&type=long-sleeves',
+    },
+    {
+      id: 3,
+      text: translations[lang].comparison.hoodie,
+      href: '/catalog/cloth?offset=0&type=hoodie',
+    },
+    {
+      id: 4,
+      text: translations[lang].comparison.outerwear,
+      href: '/catalog/cloth?offset=0&type=outerwear',
+    },
+  ]
+
   return (
     <nav className={`nav-menu ${menuIsOpen ? 'open' : 'close'}`}>
       <div className='container nav-menu__container'>
