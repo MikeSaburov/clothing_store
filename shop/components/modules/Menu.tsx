@@ -7,6 +7,7 @@ import { useUnit } from 'effector-react'
 
 import { useState } from 'react'
 import { Logo } from '../elements/Logo/Logo'
+import { AnimatePresence, motion } from 'framer-motion'
 
 export const Menu = () => {
   const [showCatalogList, setShowCatalogList] = useState(false)
@@ -134,6 +135,16 @@ export const Menu = () => {
               <button className='btn-reset nav-menu__list__item__btn'>
                 {translations[lang].main_menu.catalog}
               </button>
+              <AnimatePresence>
+                {showCatalogList && (
+                  <motion.ul
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className='list-reset nav-menu__accordion'
+                  ></motion.ul>
+                )}
+              </AnimatePresence>
             </li>
             <li className='nav-menu__list__item'></li>
             <li className='nav-menu__list__item'></li>
