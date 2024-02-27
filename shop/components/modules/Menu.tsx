@@ -6,6 +6,7 @@ import { removeOverflowHiddenFromBody } from '@/lib/utils/common'
 import { useUnit } from 'effector-react'
 
 import { useState } from 'react'
+import { Logo } from '../elements/Logo/Logo'
 
 export const Menu = () => {
   const [showCatalogList, setShowCatalogList] = useState(false)
@@ -29,34 +30,38 @@ export const Menu = () => {
 
   return (
     <nav className={`nav-menu ${menuIsOpen ? 'open' : 'close'}`}>
-      <img
-        src='/img/bg-menu.png'
-        alt='menu background'
-        className={`nav-menu__bg ${menuIsOpen ? 'open' : ''}`}
-      />
-      <button
-        className={`btn-reset nav-menu__close ${menuIsOpen ? 'open' : ''}`}
-        onClick={handleCloseMenu}
-      ></button>
-      <div className={`nav-menu__lang ${menuIsOpen ? 'open' : ''}`}>
+      <div className='container nav-menu__container'>
+        <div className={`nav-menu__logo ${menuIsOpen ? 'open' : ''}`}>
+          <Logo />
+        </div>
+        <img
+          src='/img/bg-menu.png'
+          alt='menu background'
+          className={`nav-menu__bg ${menuIsOpen ? 'open' : ''}`}
+        />
         <button
-          className={`btn-reset nav-menu__lang__btn ${
-            lang === 'ru' ? 'lang-active' : ''
-          }`}
-          onClick={handleSwitchLangToRu}
-        >
-          RU
-        </button>
-        <button
-          className={`btn-reset nav-menu__lang__btn ${
-            lang === 'en' ? 'lang-active' : ''
-          }`}
-          onClick={handleSwitchLangToEn}
-        >
-          EN
-        </button>
+          className={`btn-reset nav-menu__close ${menuIsOpen ? 'open' : ''}`}
+          onClick={handleCloseMenu}
+        ></button>
+        <div className={`nav-menu__lang ${menuIsOpen ? 'open' : ''}`}>
+          <button
+            className={`btn-reset nav-menu__lang__btn ${
+              lang === 'ru' ? 'lang-active' : ''
+            }`}
+            onClick={handleSwitchLangToRu}
+          >
+            RU
+          </button>
+          <button
+            className={`btn-reset nav-menu__lang__btn ${
+              lang === 'en' ? 'lang-active' : ''
+            }`}
+            onClick={handleSwitchLangToEn}
+          >
+            EN
+          </button>
+        </div>
       </div>
-      <h1>Menu</h1>
     </nav>
   )
 }
