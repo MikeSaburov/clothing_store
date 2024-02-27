@@ -130,7 +130,11 @@ export const Menu = () => {
           <ul
             className={`list-reset nav-menu__list ${menuIsOpen ? 'open' : ''}`}
           >
-            <li className='nav-menu__list__item'></li>
+            <li className='nav-menu__list__item'>
+              <button className='btn-reset nav-menu__list__item__btn'>
+                {translations[lang].main_menu.catalog}
+              </button>
+            </li>
             <li className='nav-menu__list__item'></li>
             <li className='nav-menu__list__item'></li>
           </ul>
